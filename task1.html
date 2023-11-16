@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Figma</title>
+        <style>
+            .checked {
+                color: orange;
+                border: 1px solid grey;
+            }
+            .unchecked {
+                color: white;
+                border: 1px solid grey;
+            }
+            #review {
+                color: white;
+                background-color: black;
+            }
+            div {
+                background-color: white;
+                width: 500px;
+                border: 1px solid white;
+                padding: 10px;
+                margin: auto;
+            }
+            body {
+                background-color: pink;
+            }
+            #yes {
+                accent-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h4>Overall rating</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star unchecked"></span>
+        <p>Click to rate</p><br>
+        <b>Review title</b><br>
+        <input type="text" value="Example: Easy to use" size="65"><br><br>
+        <b>Would you recommend this product to a friend?</b><br>
+        <input type="radio" id="yes" value="Yes" checked>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="No">
+        <label for="no">No</label><br><br>
+        <b>Product review</b><br>
+        <textarea rows="2" cols="60">Example: Since I bought this a month ago, it has been used a lot. What I like best/ what is worst about this product is ...</textarea>
+        <br><br>
+        <table>
+            <tr>
+                <th align="left">Nickname</th>
+                <th align="left">Email address (will not be published)</th>
+            </tr>
+            <tr>
+                <td><input type="text" value="Example: bob27"></td>
+                <td><input type="text" value="Example: your@email.com" size="40"></td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="radio" id="radio">
+        <label for="radio">I accept the <u>terms and conditions</u></label><br>
+        <p>You will be able to receive emails in connection with this review (eg if others comment on your review). All emails contain the option to unsubscribe. We can use the text and star rating from your review in other marketing.</p>
+        <br>
+        <input type="submit" value="Submit product review" id="review" size="80">
+        </div>
+    </body>
+</html>
